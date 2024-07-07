@@ -8,6 +8,7 @@
     table{
         border: 2px solid skyblue;
         text-align: center;
+        border: 1px whitesmoke;
     }
 
     th{
@@ -17,7 +18,6 @@
         font-weight: bold;
         text-align: center;
         color: white;
-
     }
 
     td{

@@ -37,6 +37,8 @@
       <div class="user_option">
         @if (Route::has('login'))
         @auth
+        
+        <a style="color: black" class="nav-link animated-link" href="{{url('myorders')}}">Pesananku</a>
         <a href="{{url('mycart')}}">
           <i style="margin-right: 1px; font-size: 18px;" class="fa fa-shopping-bag" aria-hidden="true"></i>
           [{{$count}}]
