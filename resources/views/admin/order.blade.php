@@ -53,6 +53,7 @@
                     <th>Harga</th>
                     <th>Gambar</th>
                     <th>Status</th>
+                    <th>Ubah Status</th>
                 </tr>
 
                 @foreach($data as $data)
@@ -66,7 +67,19 @@
                     <td>
                         <img width="150" src="products/{{$data->product->image}}" alt="nama produk">
                     </td>
-                    <td>{{$data->status}}</td>
+                    <td>
+                        @if($data->status == 'Dalam Perjalanan')
+                        <span style="color: red;">{{$data->status}}</span>
+                        @elseif($data->status == 'Terkirim')
+                        <span style="color: yellowgreen;">{{$data->status}}</span>
+                        @else
+                        <span style="color: yellow;">{{$data->status}}</span>
+                        @endif
+                    </td>
+                    <td>
+                        <a class="btn btn-primary" href="{{url('on_the_way', $data->id)}}">Dalam Perjalanan</a>
+                        <a class="btn btn-success" href="{{url('delivered', $data->id)}}">Terkirim</a>
+                    </td>
                 </tr>
                 @endforeach
             </table>
