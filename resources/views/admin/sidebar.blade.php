@@ -11,7 +11,7 @@
         <!-- Sidebar Navidation Menus-->
         <span class="heading">Main</span>
         <ul class="list-unstyled">
-                <li class="active"><a href="index.html"> <i class="icon-home"></i>Home </a></li>
+                <li><a href="{{url('admin/dashboard')}}"> <i class="icon-home"></i>Dashboard</a></li>
 
                 <li>
                   <a href="{{url('view_category')}}"> <i class="icon-grid"></i>Kategori</a>
