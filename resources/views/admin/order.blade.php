@@ -54,6 +54,7 @@
                     <th>Gambar</th>
                     <th>Status</th>
                     <th>Ubah Status</th>
+                    <th>Cetak PDF</th>
                 </tr>
 
                 @foreach($data as $data)
@@ -79,6 +80,9 @@
                     <td>
                         <a class="btn btn-primary" href="{{url('on_the_way', $data->id)}}">Dalam Perjalanan</a>
                         <a class="btn btn-success" href="{{url('delivered', $data->id)}}">Terkirim</a>
+                    </td>
+                    <td>
+                        <a class="btn btn-secondary" href="{{url('print_pdf', $data->id)}}">Print PDF</a>
                     </td>
                 </tr>
                 @endforeach
