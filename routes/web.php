@@ -60,6 +60,10 @@ route::get('mycart',[HomeController::class,'mycart'])->middleware(['auth', 'veri
 route::get('delete_cart/{id}',[HomeController::class,'delete_cart'])->middleware(['auth', 'verified']);
 
 route::post('confirm_order',[HomeController::class,'confirm_order'])->middleware(['auth', 'verified']);
+Route::controller(HomeController::class)->group(function(){
+    Route::get('stripe/{value}', 'stripe');
+    Route::post('stripe /{value}', 'stripePost')->name('stripe.post');
+});
 
 route::get('view_orders',[AdminController::class,'view_order'])->middleware(['auth', 'admin']);
 

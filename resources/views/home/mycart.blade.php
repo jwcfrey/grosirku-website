@@ -66,32 +66,7 @@
     </div>
     <div class="div_deg">
 
-        <div class="order_deg">
-            <form action="{{url('confirm_order')}}" method="Post">
 
-                @csrf
-
-                <div class="div_gap">
-                    <label for="">Nama Penerima</label>
-                    <input type="text" name="name" value="{{Auth::user()->name}}">
-                </div>
-
-                <div class="div_gap">
-                    <label for="">Alamat</label>
-                    <textarea name="address" id="">{{Auth::user()->address}}</textarea>
-                </div>
-
-                <div class="div_gap">
-                    <label for="">Nomor HP</label>
-                    <input type="text" name="phone"  value="{{Auth::user()->phone}}">
-                </div>
-
-                <div class="div_gap">
-                    <input class="btn btn-primary" type="submit" value="Place Order">
-                </div>
-
-            </form>
-        </div>
         <table>
             <tr>
                 <th>Nama Produk</th>
@@ -118,6 +93,33 @@
     <div class="cart_value">
         <h3>Jumlah total keranjang kamu sekarang adalah : Rp. {{$value}}</h3>
     </div>
+            <div class="order_deg"style="display : flex;justify-content :center ;align-items:center ;">
+            <form action="{{url('confirm_order')}}" method="Post">
+
+                @csrf
+
+                <div class="div_gap">
+                    <label for="">Nama Penerima</label>
+                    <input type="text" name="name" value="{{Auth::user()->name}}">
+                </div>
+
+                <div class="div_gap">
+                    <label for="">Alamat</label>
+                    <textarea name="address" id="">{{Auth::user()->address}}</textarea>
+                </div>
+
+                <div class="div_gap">
+                    <label for="">Nomor HP</label>
+                    <input type="text" name="phone"  value="{{Auth::user()->phone}}">
+                </div>
+
+                <div class="div_gap">
+                    <input class="btn btn-primary" type="submit" value="Cash On Delivery">
+                    <a class="btn btn-success" href="{{ url('stripe',$value) }}">Payment Using Card</a>
+                </div>
+
+            </form>
+        </div>
     <!-- info section -->
     @include('home.footer')
 </body>
