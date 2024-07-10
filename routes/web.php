@@ -73,3 +73,7 @@ route::get('on_the_way/{id}',[AdminController::class,'on_the_way'])->middleware(
 route::get('delivered/{id}',[AdminController::class,'delivered'])->middleware(['auth', 'admin']);
 
 route::get('print_pdf/{id}',[AdminController::class,'print_pdf'])->middleware(['auth', 'admin']);
+
+
+Route::delete('delete_cart/{id}', [HomeController::class, 'delete_cart'])->middleware(['auth']);
+

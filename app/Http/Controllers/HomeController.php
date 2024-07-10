@@ -96,9 +96,15 @@ class HomeController extends Controller
 
     public function delete_cart($id)
     {
-        $data = Cart::find($id);
-        $data->delete();
-        toastr()->timeOut(10000)->closeButton()->addSuccess('Produk telah sukses dihapus dari keranjang');
+        $cartItem = Cart::find($id);
+
+        if ($cartItem) {
+            $cartItem->delete();
+            toastr()->timeOut(10000)->closeButton()->addSuccess('Produk telah sukses dihapus dari keranjang');
+        } else {
+            toastr()->timeOut(10000)->closeButton()->addError('Produk tidak ditemukan');
+        }
+
         return redirect()->back();
     }
 
