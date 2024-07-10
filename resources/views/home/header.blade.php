@@ -30,8 +30,8 @@
         @if (Route::has('login'))
         @auth
         <a class="nav-link animated-link white-link" href="{{url('myorders')}}">Pesananku</a>
-        <a href="{{url('mycart')}}">
-          <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+        <a href="{{url('mycart')}}" style="color: white;">
+          <i class="fa fa-shopping-bag" style="color: white;" aria-hidden="true"></i>
           [{{$count}}]
         </a>
         <form method="POST" action="{{ route('logout') }}">
