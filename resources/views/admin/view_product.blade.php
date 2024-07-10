@@ -149,7 +149,14 @@
                                 <td>{{ $products->quantity }}</td>
                                 <td><img height="120" width="120" src="products/{{ $products->image }}"></td>
                                 <td><a class="btn btn-success" href="{{ url('update_product', $products->id) }}">Edit</a></td>
-                                <td><a class="btn btn-danger" onclick="confirmation(event)" href="{{ url('delete_product', $products->id) }}">Delete</a></td>
+                                <td>
+    <form action="{{ url('delete_product', $products->id) }}" method="POST" onsubmit="return confirmation(event)">
+        @csrf
+        @method('DELETE')
+        <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+</td>
+
                             </tr>
                         @endforeach
                     </table>

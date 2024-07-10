@@ -43,7 +43,7 @@ route::post('upload_product',[AdminController::class, 'upload_product'])->middle
 
 route::get('view_product',[AdminController::class, 'view_product'])->middleware(['auth', 'admin']);
 
-route::get('delete_product/{id}',[AdminController::class, 'delete_product'])->middleware(['auth', 'admin']);
+Route::delete('delete_product/{id}', [AdminController::class, 'delete_product'])->middleware(['auth', 'admin']);
 
 route::get('update_product/{id}',[AdminController::class, 'update_product'])->middleware(['auth', 'admin']);
 
@@ -60,6 +60,7 @@ route::get('mycart',[HomeController::class,'mycart'])->middleware(['auth', 'veri
 route::get('delete_cart/{id}',[HomeController::class,'delete_cart'])->middleware(['auth', 'verified']);
 
 route::post('confirm_order',[HomeController::class,'confirm_order'])->middleware(['auth', 'verified']);
+
 Route::controller(HomeController::class)->group(function(){
     Route::get('stripe/{value}', 'stripe');
     Route::post('stripe /{value}', 'stripePost')->name('stripe.post');

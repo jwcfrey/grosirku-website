@@ -89,13 +89,19 @@ class AdminController extends Controller
 
     public function delete_product($id)
     {
-        $data = Product::find($id);
-        $image_path = public_path('products/' . $data->image);
-        if (file_exists($image_path)) {
-            unlink($image_path);
+        $product = Product::find($id);
+
+        if ($product) {
+            $image_path = public_path('products/' . $product->image);
+            if (file_exists($image_path)) {
+                unlink($image_path);
+            }
+            $product->delete();
+            toastr()->timeOut(10000)->closeButton()->addSuccess('Produk Berhasil Dihapus');
+        } else {
+            toastr()->timeOut(10000)->closeButton()->addError('Produk tidak ditemukan');
         }
-        $data->delete();
-        toastr()->timeOut(10000)->closeButton()->addSuccess('Produk Berhasil Dihapus');
+
         return redirect()->back();
     }
 
