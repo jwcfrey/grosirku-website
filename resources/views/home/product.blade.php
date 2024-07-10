@@ -78,7 +78,7 @@
   }
 
   .btn-danger {
-    background-color: #dc3545;
+    background-color: #fff;
     color: #fff;
   }
 
@@ -88,7 +88,7 @@
   }
 
   .btn-primary {
-    background-color: #007bff;
+    background-color: #db4566;
     color: #fff;
   }
 

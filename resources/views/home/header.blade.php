@@ -17,10 +17,10 @@
           <a class="nav-link animated-link white-link" href="#">Shop</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link animated-link white-link" href="#">Why Us</a>
+          <a class="nav-link animated-link white-link" href="why.html">Why Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link animated-link white-link" href="#">Testimoni</a>
+          <a class="nav-link animated-link white-link" href="testimonial.html">Testimoni</a>
         </li>
         <li class="nav-item">
           <a class="nav-link animated-link white-link" href="#">Hubungi Kami</a>
