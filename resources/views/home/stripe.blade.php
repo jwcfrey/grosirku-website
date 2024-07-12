@@ -59,7 +59,7 @@
                                     type='text'>
                             </div>
                             <div class='col-xs-12 col-md-4 form-group expiration required'>
-                                <label class='control-label'>Tahun Bulan</label> <input
+                                <label class='control-label'>Bulan kadaluwarsa</label> <input
                                     class='form-control card-expiry-month' placeholder='MM' size='2'
                                     type='text'>
                             </div>
