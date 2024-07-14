@@ -88,10 +88,10 @@
                         </div>
                         <div class="user-content">
                             <h5 class="mb-0">Bondan</h5>
-                            <span>Manajer burger Bangor</span>
+                            <span>Admin Burger Bangor</span>
                             <br>
                             <br>
-                            <p>"Dingin tetapi tidak kejam"</p>
+                            <p>"Diam-diam menghanyutkan..."</p>
                         </div>
                         <div class="ratings">
                             <i class="fa fa-star"></i>
@@ -129,8 +129,8 @@
                             <img src="images/dprri.jpg" class="rounded-circle">
                         </div>
                         <div class="user-content">
-                            <h5 class="mb-0">Patur</h5>
-                            <span>Kesatria kegelapan</span>
+                            <h5 class="mb-0">Mas Fatur</h5>
+                            <span>Member JMK48</span>
                             <br>
                             <br>
                             <p>"Must a nice to lol"</p>
