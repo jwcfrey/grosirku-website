@@ -201,4 +201,42 @@ class HomeController extends Controller
     }
 
 
+
+    public function why()
+    {
+       
+        if(Auth::id())
+        {
+            $user = Auth::user();
+            $userid = $user->id;
+            $count = Cart::where('user_id', $userid)->count();
+        }
+        else{
+            $count = '';
+        }
+        return view('home.why', compact('count'));
+    }
+
+    public function testimonial()
+    {
+       
+        if(Auth::id())
+        {
+            $user = Auth::user();
+            $userid = $user->id;
+            $count = Cart::where('user_id', $userid)->count();
+        }
+        else{
+            $count = '';
+        }
+        return view('home.testimonial', compact('count'));
+    }
+
+
+
+
+
+
+
+
 }

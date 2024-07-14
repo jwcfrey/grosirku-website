@@ -11,43 +11,62 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link animated-link home-link" href="{{url('/')}}">Home<span class="sr-only">(current)</span></a>
+          <a class="nav-link animated-link home-link" href="{{ url('/') }}">Menu<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link animated-link white-link" href="{{url('shop')}}">Shop</a>
+          <a class="nav-link animated-link white-link" href="{{ url('shop') }}">Produk</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link animated-link white-link" href="why.html">Why Us</a>
+          <a class="nav-link animated-link white-link" href="{{ url('why') }}">Tentang kita</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link animated-link white-link" href="testimonial.html">Testimoni</a>
+          <a class="nav-link animated-link white-link" href="{{url('testimonial')}}">Testimoni</a>
         </li>
+       
         <li class="nav-item">
-          <a class="nav-link animated-link white-link" href="#">Hubungi Kami</a>
-        </li>
+    <a id="contact-link" class="nav-link animated-link white-link" href="#contact">Hubungi Kami</a>
+</li>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var contactLink = document.getElementById('contact-link');
+        contactLink.addEventListener('click', function(event) {
+            // Cek apakah pengguna berada di halaman utama
+            var currentPath = window.location.pathname;
+            var homePath = '/';  // Ganti dengan path halaman utama Anda jika berbeda
+
+            if (currentPath !== homePath) {
+                event.preventDefault();
+                window.location.href = homePath + '#contact'; // Ganti '/' dengan path halaman utama jika berbeda
+            }
+        });
+    });
+</script>
+
+
       </ul>
       <div class="user_option ml-auto">
         @if (Route::has('login'))
-        @auth
-        <a class="nav-link animated-link white-link" href="{{url('myorders')}}">Pesananku</a>
-        <a href="{{url('mycart')}}" style="color: white;">
-          <i class="fa fa-shopping-bag" style="color: white;" aria-hidden="true"></i>
-          [{{$count}}]
-        </a>
-        <form method="POST" action="{{ route('logout') }}">
-          @csrf
-          <button type="submit" class="animated-link logout-button">Keluar</button>
-        </form>
-        @else
-        <a class="animated-link white-link" href="{{url('/login')}}">
-          <i class="fa fa-user" aria-hidden="true"></i>
-          <span>Masuk</span>
-        </a>
-        <a class="animated-link white-link" href="{{url('/register')}}">
-          <i class="fa fa-vcard" aria-hidden="true"></i>
-          <span>Daftar</span>
-        </a>
-        @endauth
+          @auth
+            <a class="nav-link animated-link white-link" href="{{ url('myorders') }}">Pesananku</a>
+            <a href="{{ url('mycart') }}" style="color: white;">
+              <i class="fa fa-shopping-bag" style="color: white;" aria-hidden="true"></i>
+              [{{ $count }}]
+            </a>
+            <form method="POST" action="{{ route('logout') }}">
+              @csrf
+              <button type="submit" class="animated-link logout-button">Keluar</button>
+            </form>
+          @else
+            <a class="animated-link white-link" href="{{ url('/login') }}">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <span>Masuk</span>
+            </a>
+            <a class="animated-link white-link" href="{{ url('/register') }}">
+              <i class="fa fa-vcard" aria-hidden="true"></i>
+              <span>Daftar</span>
+            </a>
+          @endauth
         @endif
       </div>
     </div>

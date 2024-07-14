@@ -62,6 +62,9 @@ route::get('delete_cart/{id}',[HomeController::class,'delete_cart'])->middleware
 route::post('confirm_order',[HomeController::class,'confirm_order'])->middleware(['auth', 'verified']);
 
 route::get('shop',[HomeController::class,'shop']);#added
+route::get('why',[HomeController::class,'why']);#added
+route::get('testimonial',[HomeController::class,'testimonial']);#added
+
 
 Route::controller(HomeController::class)->group(function(){
     Route::get('stripe/{value}', 'stripe');

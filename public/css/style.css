@@ -592,6 +592,8 @@ a:focus {
   color: #9242dd;
 }
 
+
+  
 .contact_section {
   position: relative;
 }
@@ -697,7 +699,7 @@ a:focus {
 
 .client_section .box .client_info .client_name h5 {
   font-weight: 600;
-  color: #db4f66;
+  color: #dd3d3d;
 }
 
 .client_section .box .client_info .client_name h6 {
@@ -719,7 +721,7 @@ a:focus {
 .client_section .carousel-control-next {
   width: 45px;
   height: 125px;
-  background-color: #db4f66;
+  background-color: #ce5454;
   opacity: 1;
   font-size: 28px;
   font-weight: bold;
