@@ -31,9 +31,9 @@
             <input type="text" class="message-box" name="message" placeholder="Pesan" />
           </div>
           <div class="d-flex">
-            <button type="submit" class="btn btn-primary">
-              Kirim
-            </button>
+          <button type="button" class="btn btn-primary" id="whatsappButton">
+  Kirim
+</button>
           </div>
         </form>
       </div>
@@ -124,3 +124,9 @@
   height: 100%;
 }
 </style>
+
+<script>
+  document.getElementById('whatsappButton').addEventListener('click', function() {
+    window.location.href = 'https://wa.me/6282299865504';
+  });
+</script>
