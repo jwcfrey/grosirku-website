@@ -11,12 +11,10 @@
                     Selamat Datang <br>
                     Di Toko Grosirku
                   </h1>
-                  <p>
-                    Barang lengkap, harga hemat, belanja di Toko Grosirku seperti masuk dunia baru! Di sini, Anda bisa
-                    menemukan segala yang Anda butuhkan dengan mudah dan cepat. Dari barang-barang kebutuhan pokok
-                    hingga produk-produk unik, semua ada di Toko Grosir. Ditambah lagi, dengan harga yang terjangkau,
-                    Anda bisa belanja tanpa khawatir kantong jebol. Pelayanan kami juga siap membantu Anda kapan saja.
-                    Jadi, tunggu apa lagi? Yuk, jelajahi dunia belanja di Toko Grosir sekarang juga!
+                  <p style="font-size:18px;">
+                  Toko Grosirku, tempat lengkap dan murah meriah! Di sini, semua ada, dari kebutuhan pokok sampai barang kekinian.
+                  Harga terjangkau bikin belanja lebih hemat, tanpa bikin kantong bolong.
+                  Pelayanan juga oke, siap bantu kapan aja. Jadi, ngapain masih mikir? Yuk, eksplorasi serunya belanja di Toko Grosir sekarang!
                   </p>
                   <a id="contact-link" class="nav-link animated-link white-link" href="#contact">Hubungi Kami</a>
                 </div>
