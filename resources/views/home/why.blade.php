@@ -109,10 +109,10 @@
                         </div>
                         <div class="user-content">
                             <h5 class="mb-0">Heru</h5>
-                            <span>Teknisi Kapal karam</span>
+                            <span>Teknisi Keuangan Haram</span>
                             <br>
                             <br>
-                            <p>"Better to die"</p>
+                            <p>"Semangat"</p>
                         </div>
                         <div class="ratings">
                             <i class="fa fa-star"></i>
