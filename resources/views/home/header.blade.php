@@ -31,13 +31,11 @@
     document.addEventListener('DOMContentLoaded', function() {
         var contactLink = document.getElementById('contact-link');
         contactLink.addEventListener('click', function(event) {
-            // Cek apakah pengguna berada di halaman utama
             var currentPath = window.location.pathname;
-            var homePath = '/';  // Ganti dengan path halaman utama Anda jika berbeda
-
+            var homePath = '/';
             if (currentPath !== homePath) {
                 event.preventDefault();
-                window.location.href = homePath + '#contact'; // Ganti '/' dengan path halaman utama jika berbeda
+                window.location.href = homePath + '#contact';
             }
         });
     });
@@ -49,8 +47,8 @@
         @if (Route::has('login'))
           @auth
             <a class="nav-link animated-link white-link" href="{{ url('myorders') }}">Pesananku</a>
-            <a href="{{ url('mycart') }}" style="color: white;">
-              <i class="fa fa-shopping-bag" style="color: white;" aria-hidden="true"></i>
+            <a href="{{ url('mycart') }}" style="color: whitesmoke;">
+              <i class="fa fa-shopping-bag nav-link animated-link white-link" style="color: black;" aria-hidden="true"></i>
               [{{ $count }}]
             </a>
             <form method="POST" action="{{ route('logout') }}">
@@ -58,11 +56,11 @@
               <button type="submit" class="animated-link logout-button">Keluar</button>
             </form>
           @else
-            <a class="animated-link white-link" href="{{ url('/login') }}">
+            <a class="nav-link animated-link white-link" href="{{ url('/login') }}">
               <i class="fa fa-user" aria-hidden="true"></i>
               <span>Masuk</span>
             </a>
-            <a class="animated-link white-link" href="{{ url('/register') }}">
+            <a class="nav-link animated-link white-link" href="{{ url('/register') }}">
               <i class="fa fa-vcard" aria-hidden="true"></i>
               <span>Daftar</span>
             </a>
@@ -147,7 +145,7 @@
   }
 
   .logout-button {
-    background-color: gray;
+    background-color: white;
     padding: 10px;
     border: none;
     border-radius: 5px;
