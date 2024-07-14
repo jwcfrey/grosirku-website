@@ -9,7 +9,7 @@
                     <div class="detail-box"> 
                       <h1>
                         Selamat Datang <br>
-                        Di Isekai Store
+                        Di Toko Grosirku
                       </h1>
                       <p>
                       Barang lengkap, harga hemat, belanja di Isekai Store seperti masuk dunia baru! Di sini, Anda bisa menemukan segala yang Anda butuhkan dengan mudah dan cepat. Dari barang-barang kebutuhan pokok hingga produk-produk unik, semua ada di Isekai Store. Ditambah lagi, dengan harga yang terjangkau, Anda bisa belanja tanpa khawatir kantong jebol. Pelayanan kami juga siap membantu Anda kapan saja. Jadi, tunggu apa lagi? Yuk, jelajahi dunia belanja di Isekai Store sekarang juga!
@@ -19,7 +19,7 @@
                   </div>
                   <div class="col-md-5 ">
                     <div class="img-box">
-                      <img style="width:600px" src="images/image3.jpeg" alt="" />
+                      <img style="width:600px" src="admincss/img/warungmadura.png" alt="" />
                     </div>
                   </div>
                 </div>
