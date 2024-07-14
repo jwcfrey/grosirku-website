@@ -118,7 +118,7 @@
     cursor: pointer;
     text-decoration: none;
     background-color: black;
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.3s ease;
   }
 
   .animated-link:hover {
@@ -147,7 +147,7 @@
   }
 
   .logout-button {
-    background-color: skyblue;
+    background-color: gray;
     padding: 10px;
     border: none;
     border-radius: 5px;
