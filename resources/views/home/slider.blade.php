@@ -23,7 +23,7 @@
               </div>
               <div class="col-md-5 ">
                 <div class="img-box">
-                  <img style="width:600px" src="admincss/img/bagrosir.png" alt="" />
+                  <img style="width:400px; height:auto;" src="admincss/img/bagrosir.png" alt="" />
                 </div>
               </div>
             </div>
