@@ -8,10 +8,10 @@
       <span class=""></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div style="width:100%; background-color:transparant;"  class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link animated-link home-link" href="{{ url('/') }}">Menu<span class="sr-only">(current)</span></a>
+        <li class="nav-item" >
+          <a class="nav-link animated-link white-link" style="margin-left:35px;" href="{{ url('/') }}">Menu<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link animated-link white-link" href="{{ url('shop') }}">Produk</a>
@@ -45,7 +45,7 @@
 
 
       </ul>
-      <div class="user_option ml-auto">
+      <div class="user_option ml-auto" style="margin-right:35px;">
         @if (Route::has('login'))
           @auth
             <a class="nav-link animated-link white-link" href="{{ url('myorders') }}">Pesananku</a>
@@ -117,18 +117,19 @@
     font-size: 14px;
     cursor: pointer;
     text-decoration: none;
+    background-color: black;
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
   }
 
   .animated-link:hover {
     color: white !important;
     transform: translateY(-3px);
-    background-color: black;
+    background-color: white;
   }
 
   .home-link {
-    background-color: skyblue;
-    padding-left: 5px; /* Adjust padding to move it slightly to the left */
+    background-color: white;
+    padding-left: 5px;
   }
 
   .home-link:hover {
