@@ -15,7 +15,7 @@
           <div class="navbar-header">
             <!-- Navbar Header--><a href="index.html" class="navbar-brand">
               <div class="brand-text brand-big visible text-uppercase"><strong class="text-primary">Gro</strong><strong>sirku</strong></div>
-              <div class="brand-text brand-sm"><strong class="text-primary">G</strong><strong>A</strong></div></a>
+              <div class="brand-text brand-sm"><strong class="text-primary">G</strong><strong>S</strong></div></a>
             <!-- Sidebar Toggle Btn-->
             <button class="sidebar-toggle"><i class="fa fa-long-arrow-left"></i></button>
           </div>
@@ -64,7 +64,7 @@
 
         .logout-button:hover {
             background-color: #ff3e30;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 15px 30px rgba(4, 72, 72, 0.3);
         }
 
         .logout-button:active {

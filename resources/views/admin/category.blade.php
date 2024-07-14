@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     @include('admin.css')
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init();
+        });
+    </script>
     <style type="text/css">
         input[type='text'] {
             width: 400px;
             height: 50px;
+            border: 2px solid #4a5568;
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #2d3748;
+            color: #cbd5e0;
         }
         .div_deg {
             display: flex;
@@ -16,21 +30,22 @@
         .table_deg {
             text-align: center;
             margin: auto;
-            border: 2px solid yellowgreen;
+            border: 2px solid #2d3748;
             margin-top: 50px;
             width: 600px;
+            background-color: #4a5568;
+            color: #cbd5e0;
         }
         th {
-            background-color: skyblue;
+            background-color: #2b6cb0;
             padding: 15px;
             font-size: 20px;
             font-weight: bold;
             color: white;
         }
         td {
-            color: white;
             padding: 10px;
-            border: 1px solid skyblue;
+            border: 1px solid #2d3748;
         }
         .btn {
             display: inline-block;
@@ -39,28 +54,28 @@
             padding: 10px 20px;
             border-radius: 8px;
             transition: all 0.3s ease-in-out;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
         .btn-success {
-            background: linear-gradient(45deg, #28a745, #218838);
+            background: linear-gradient(45deg, #38a169, #2f855a);
             color: white;
             border: none;
         }
         .btn-success:hover {
-            background: linear-gradient(45deg, #218838, #1e7e34);
+            background: linear-gradient(45deg, #2f855a, #276749);
             transform: scale(1.05);
         }
         .btn-danger {
-            background: linear-gradient(45deg, #dc3545, #c82333);
+            background: linear-gradient(45deg, #e53e3e, #c53030);
             color: white;
             border: none;
         }
         .btn-danger:hover {
-            background: linear-gradient(45deg, #c82333, #bd2130);
+            background: linear-gradient(45deg, #c53030, #9b2c2c);
             transform: scale(1.05);
         }
         .btn:active {
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
             transform: translateY(2px);
         }
     </style>
@@ -72,17 +87,17 @@
         <div class="page-header">
             <div class="container-fluid">
                 <h1 style="color: white;">Tambah Kategori Produk</h1>
-                <div class="div_deg">
+                <div class="div_deg" data-aos="fade-up">
                     <form action="{{url('add_category')}}" method="post">
                         @csrf
                         <div>
-                            <input type="text" name="category">
+                            <input type="text" name="category" placeholder="Nama Kategori" required>
                             <input class="btn btn-primary" type="submit" value="Tambah">
                         </div>
                     </form>
                 </div>
                 <div>
-                    <table class="table_deg">
+                    <table class="table_deg" data-aos="fade-up" data-aos-delay="100">
                         <tr>
                             <th>Kategori</th>
                             <th>Edit</th>
