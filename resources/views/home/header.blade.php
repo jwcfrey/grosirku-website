@@ -14,7 +14,7 @@
           <a class="nav-link animated-link white-link" style="margin-left:35px;" href="{{ url('/') }}">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link animated-link white-link" href="{{ url('shop') }}">Belanja</a>
+          <a class="nav-link animated-link white-link" href="{{ url('shop') }}">Produk</a>
         </li>
         <li class="nav-item">
           <a class="nav-link animated-link white-link" href="{{ url('why') }}">Tentang kita</a>
@@ -48,7 +48,7 @@
           @auth
             <a class="nav-link animated-link white-link" href="{{ url('myorders') }}">Pesananku</a>
             <a href="{{ url('mycart') }}" style="color: whitesmoke;">
-              <i class="fa fa-shopping-bag nav-link animated-link white-link" style="color: black;" aria-hidden="true"></i>
+              <i class="fa fa-cart-plus nav-link animated-link white-link" style="color: black;" aria-hidden="true"></i>
               [{{ $count }}]
             </a>
             <form method="POST" action="{{ route('logout') }}">

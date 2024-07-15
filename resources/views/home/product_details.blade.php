@@ -65,6 +65,7 @@
 
 
                         <div class="detail-box">
+                        <img style="width:20px; height:auto;" src="admincss/img/bagrosir.png" alt="" />
                             <a class="btn btn-primary" href="{{url('add_cart', $data->id)}}">Tambah Keranjang</a>
                         </div>
 
