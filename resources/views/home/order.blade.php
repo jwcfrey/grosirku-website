@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pesanan</title>
     @include('home.css')
     <style type="text/css">
         .div_center{
@@ -66,7 +66,7 @@
     </div>
 
 
-
+<br><br><br>
     @include('home.footer')
 </body>
 

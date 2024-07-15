@@ -28,8 +28,9 @@
         label {
             display: inline-block;
             width: 200px;
-            font-size: 18px;
+            font-size: 40px;
             color: white;
+            font-style: bold;
         }
 
         input[type='text'], input[type='number'], input[type='file'], select, textarea {

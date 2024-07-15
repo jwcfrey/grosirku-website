@@ -17,15 +17,14 @@
           <a class="nav-link animated-link white-link" href="{{ url('shop') }}">Produk</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link animated-link white-link" href="{{ url('why') }}">Developer Webstite</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link animated-link white-link" href="{{url('testimonial')}}">Testimoni</a>
         </li>
-       
         <li class="nav-item">
-    <a id="contact-link" class="nav-link animated-link white-link" href="#contact">Hubungi Kami</a>
-</li>
+          <a id="contact-link" class="nav-link animated-link white-link" href="#contact">Hubungi Kami</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link animated-link white-link" href="{{ url('why') }}">Pengembang Web</a>
+        </li>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -48,8 +47,8 @@
           @auth
             <a class="nav-link animated-link white-link" href="{{ url('myorders') }}">Pesananku</a>
             <a href="{{ url('mycart') }}" style="color: whitesmoke;">
-              <i class="fa fa-cart-plus nav-link animated-link white-link" style="color: black;" aria-hidden="true"></i>
-              [{{ $count }}]
+              <i class="fa fa-cart-plus nav-link animated-link white-link" style="color: black; font-size:bold; height:auto" aria-hidden="true"><span></span>{{ $count }}</i>
+              
             </a>
             <form method="POST" action="{{ route('logout') }}">
               @csrf
