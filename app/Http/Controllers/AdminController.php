@@ -92,16 +92,23 @@ class AdminController extends Controller
         $product = Product::find($id);
 
         if ($product) {
+            // Hapus entri terkait dalam tabel carts
+            \App\Models\Cart::where('product_id', $id)->delete();
+            
+            // Hapus gambar produk dari sistem file
             $image_path = public_path('products/' . $product->image);
             if (file_exists($image_path)) {
                 unlink($image_path);
             }
+            
+            // Hapus produk dari database
             $product->delete();
+    
             toastr()->timeOut(10000)->closeButton()->addSuccess('Produk Berhasil Dihapus');
         } else {
             toastr()->timeOut(10000)->closeButton()->addError('Produk tidak ditemukan');
         }
-
+    
         return redirect()->back();
     }
 

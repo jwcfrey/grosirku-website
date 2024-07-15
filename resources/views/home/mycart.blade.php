@@ -1,121 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     @include('home.css')
-    <style>
+    <style type="text/css">
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .hero_area {
+            background-color: #eee;
+            padding: 20px 0;
         }
 
         .div_deg {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 60px 0;
+            margin: 60px;
         }
 
         table {
             border-collapse: collapse;
-            width: 80%;
-            max-width: 1000px;
-            margin: 20px 0;
-            box-shadow: 0 2px 15px rgba(64, 64, 64, 0.1);
-        }
-
-        th, td {
-            border: 1px solid #dee2e6;
-            padding: 12px 15px;
-            text-align: center;
+            width: 800px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
         }
 
         th {
-            background-color: #343a40;
-            color: #fff;
-            font-size: 18px;
-        }
-
-        td img {
-            width: 100px;
-            border-radius: 8px;
-        }
-
-        .btn {
-            padding: 8px 12px;
-            font-size: 14px;
-            border: none;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-
-        .btn-danger {
-            background-color: #dc3545;
-            color: #fff;
-        }
-
-        .btn-primary {
-            background-color: #007bff;
-            color: #fff;
-        }
-
-        .btn-success {
-            background-color: #28a745;
-            color: #fff;
-        }
-
-        .cart_value, .order_deg {
+            border: 2px solid black;
             text-align: center;
-            margin-bottom: 40px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: black;
+            padding: 10px;
+        }
+
+        td {
+            border: 2px solid skyblue;
+            padding: 15px;
+            transition: background-color 0.3s;
+        }
+
+        td:hover {
+            background-color: #f1f1f1;
+        }
+
+        .cart_value {
+            text-align: center;
+            margin-bottom: 70px;
+            padding: 18px;
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
         }
 
         .order_deg {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 15px rgba(64, 64, 64, 0.1);
-        }
-
-        .div_gap {
-            margin: 10px 0;
-            width: 100%;
+            margin-top: -50px;
         }
 
         label {
             display: inline-block;
             width: 150px;
+            margin-bottom: 10px;
             font-weight: bold;
         }
 
         input[type="text"], textarea {
-            width: calc(100% - 160px);
+            width: 300px;
             padding: 10px;
-            border-radius: 4px;
-            border: 1px solid #ced4da;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            transition: border-color 0.3s;
         }
 
-        textarea {
-            resize: vertical;
+        input[type="text"]:focus, textarea:focus {
+            border-color: black;
+            outline: none;
         }
 
-        .hero_area {
-            background-color: #e9ecef;
+        .div_gap {
+            padding: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+        }
+
+        .btn-primary {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .btn-success:hover {
+            background-color: #218838;
         }
     </style>
 </head>
 
 <body>
     <div class="hero_area">
-        <!-- header section starts -->
         @include('home.header')
-        <!-- end header section -->
     </div>
-
+    
     <div class="div_deg">
         <table>
             <tr>
@@ -124,14 +141,14 @@
                 <th>Gambar</th>
                 <th>Hapus</th>
             </tr>
-
+            
             <?php $value = 0; ?>
             @foreach ($cart as $item)
             <tr>
                 <td>{{ $item->product->title }}</td>
-                <td>Rp. {{ number_format($item->product->price, 0, ',', '.') }}</td>
+                <td>{{ number_format((float)$item->product->price, 0, ',', '.') }}</td>
                 <td>
-                    <img src="/products/{{ $item->product->image }}" alt="Gambar Produk">
+                    <img width="150" src="/products/{{ $item->product->image }}" alt="{{ $item->product->title }}">
                 </td>
                 <td>
                     <form action="{{ url('delete_cart', $item->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this item?');">
@@ -141,21 +158,21 @@
                     </form>
                 </td>
             </tr>
-            <?php $value += $item->product->price; ?>
+            <?php $value += (float)$item->product->price; ?>
             @endforeach
         </table>
     </div>
-
+    
     <div class="cart_value">
         <h3>Jumlah total keranjang kamu sekarang adalah : Rp. {{ number_format($value, 0, ',', '.') }}</h3>
     </div>
-
+    
     <div class="order_deg">
         <form action="{{ url('confirm_order') }}" method="POST">
             @csrf
             <div class="div_gap">
                 <label for="name">Nama Penerima</label>
-                <input type="text" name="name" value="{{ Auth::user()->name }}">
+                <input type="text" name="name" id="name" value="{{ Auth::user()->name }}">
             </div>
             <div class="div_gap">
                 <label for="address">Alamat</label>
@@ -163,16 +180,15 @@
             </div>
             <div class="div_gap">
                 <label for="phone">Nomor HP</label>
-                <input style="margin-bottom:15px" type="text" name="phone" value="{{ Auth::user()->phone }}">
+                <input type="text" name="phone" id="phone" value="{{ Auth::user()->phone }}">
             </div>
-            <div class="div_gap">
-                <input class="btn btn-primary" type="submit" value="Bayar COD">
-                <a class="btn btn-success" href="{{ url('stripe', $value) }}">Bayar Pakai Kartu</a>
+            <div class="div_gap" style="padding:15px;">
+                <input class="btn btn-primary" type="submit" value="Bayar Cash On Delivery">
+                <a class="btn btn-success" href="{{ url('stripe', $value) }}" style="margin-left:10px;">Gunakan Kartu Kredit</a>
             </div>
         </form>
     </div>
-
-    <!-- info section -->
+    
     @include('home.footer')
 </body>
 
