@@ -13,7 +13,7 @@
           <div class="detail-box">
             <h6>{{$products->title}}</h6>
             <h6>Harga
-              <span>Rp{{$products->price}}</span>
+              <span style="color:black;"><p>Rp{{$products->price}}</p></span>
             </h6>
           </div>
           <div class="button-container">
@@ -78,22 +78,22 @@
   }
 
   .btn-danger {
-    background-color: #fff;
+    background-color: tomato;
     color: #fff;
   }
 
   .btn-danger:hover {
-    background-color: #c82333;
+    background-color: whitesmoke;
     color: #fff;
   }
 
   .btn-primary {
-    background-color: #db4566;
+    background-color: whitesmoke;
     color: #fff;
   }
 
   .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: tomato;
     color: #fff;
   }
 </style>

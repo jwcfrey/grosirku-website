@@ -11,10 +11,10 @@
     <div style="width:100%; background-color:transparant;"  class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item" >
-          <a class="nav-link animated-link white-link" style="margin-left:35px;" href="{{ url('/') }}">Menu<span class="sr-only">(current)</span></a>
+          <a class="nav-link animated-link white-link" style="margin-left:35px;" href="{{ url('/') }}">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link animated-link white-link" href="{{ url('shop') }}">Produk</a>
+          <a class="nav-link animated-link white-link" href="{{ url('shop') }}">Belanja</a>
         </li>
         <li class="nav-item">
           <a class="nav-link animated-link white-link" href="{{ url('why') }}">Tentang kita</a>
