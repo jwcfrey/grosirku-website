@@ -16,7 +16,7 @@
                   Harga terjangkau bikin belanja lebih hemat, tanpa bikin kantong bolong.
                   Pelayanan juga oke, siap bantu kapan aja. Jadi, ngapain masih mikir? Yuk, eksplorasi serunya belanja di Toko Grosir sekarang!
                   </p>
-                  <a id="contact-link" style="background-color:tomato" class="nav-link animated-link white-link animate__animated animate__pulse animate__infinite" href="#contact">Hubungi Kami</a>
+                  <a id="contact-link" style="background-color:tomato" class="nav-link animated-link white-link animate__animated" href="#contact">Hubungi Kami</a>
                 </div>
               </div>
               <div class="col-md-5">
