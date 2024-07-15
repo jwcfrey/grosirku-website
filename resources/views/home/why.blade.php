@@ -35,7 +35,7 @@
     }
   </style>
 </head>
-<body style="font-weight:bold;">
+<body style="font-style:bold;">
   <div class="hero_area">
     <!-- header section starts -->
     @include('home.header')
@@ -43,20 +43,20 @@
 
     <div class="container mt-5 mb-5">
       <div class="heading_container heading_center">
-        <h2>Dibangun oleh</h2>
+        <h2>Website Ini Dibuat Oleh</h2>
       </div>
       <div class="row equal-height g-2">
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="card p-3 text-center px-4">
             <div class="user-image">
               <img src="images/imagenary.jpg" class="rounded-circle">
             </div>
             <div class="user-content">
-              <h5 class="mb-0">Kepa</h5>
+              <h5 class="mb-0">Kepaa</h5>
               <span>El gasing</span>
               <br>
               <br>
-              <p>"Mana sprei gratisnya?"</p>
+              <p style="font-size:20px;">"Mana sprei gratisnya?"</p>
             </div>
             <div class="ratings">
               <i class="fa fa-star"></i>
@@ -67,38 +67,18 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card p-3 text-center px-4">
-            <div class="user-image">
-              <img src="images/gembul.jpg" class="rounded-circle">
-            </div>
-            <div class="user-content">
-              <h5 class="mb-0">Guru Gembul</h5>
-              <span>Full stack Aldous</span>
-              <br>
-              <br>
-              <p>"Depopulasi"</p>
-            </div>
-            <div class="ratings">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
+        
+        <div class="col-md-6" style="font-size:20px;">
           <div class="card p-3 text-center px-4">
             <div class="user-image">
               <img src="images/dpd.jpg" class="rounded-circle">
             </div>
             <div class="user-content">
-              <h5 class="mb-0">Bondan</h5>
+              <h5 class="mb-0">Bondan Naik Haji (Amin)</h5>
               <span>Admin Burger Bangor</span>
               <br>
               <br>
-              <p>"Diam-diam menghanyutkan..."</p>
+              <p>"Dingin tapi tidak kejam &#129398"</p>
             </div>
             <div class="ratings">
               <i class="fa fa-star"></i>
@@ -109,17 +89,17 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" style="font-size:20px;">
           <div class="card p-3 text-center px-4">
             <div class="user-image">
               <img src="images/dprd.jpg" class="rounded-circle">
             </div>
             <div class="user-content">
               <h5 class="mb-0">Heru</h5>
-              <span>Teknisi Keuangan Haram</span>
+              <span>Teknisi Backend</span>
               <br>
               <br>
-              <p>"Semangat"</p>
+              <p style="font-size:20px;">"Penghabisan Titik Darah Terakhir"</p>
             </div>
             <div class="ratings">
               <i class="fa fa-star"></i>
@@ -130,17 +110,17 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" style="font-size:20px;">
           <div class="card p-3 text-center px-4">
             <div class="user-image">
               <img src="images/dprri.jpg" class="rounded-circle">
             </div>
             <div class="user-content">
               <h5 class="mb-0">Mas Fatur</h5>
-              <span>Member JMK48</span>
+              <span>Atmin JMK48</span>
               <br>
               <br>
-              <p>"Must a nice to lol"</p>
+              <p style="font-size:20px;">"Yaudah Sih Wir"</p>
             </div>
             <div class="ratings">
               <i class="fa fa-star"></i>

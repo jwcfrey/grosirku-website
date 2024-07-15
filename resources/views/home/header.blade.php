@@ -17,7 +17,7 @@
           <a class="nav-link animated-link white-link" href="{{ url('shop') }}">Produk</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link animated-link white-link" href="{{ url('why') }}">Tentang kita</a>
+          <a class="nav-link animated-link white-link" href="{{ url('why') }}">Developer Webstite</a>
         </li>
         <li class="nav-item">
           <a class="nav-link animated-link white-link" href="{{url('testimonial')}}">Testimoni</a>
