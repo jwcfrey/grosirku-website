@@ -137,8 +137,8 @@
                             <img src="images/imagenary.jpg" class="rounded-circle" alt="User Image">
                         </div>
                         <div class="user-content">
-                            <h5 class="mb-0">Kepaa</h5>
-                            <span>El gasing</span>
+                            <h5 class="mb-0">Kheva</h5>
+                            <span>Teknisi Front End</span>
                             <p>"Mana sprei gratisnya?"</p>
                         </div>
                         <div class="ratings">
@@ -158,7 +158,7 @@
                         </div>
                         <div class="user-content">
                             <h5 class="mb-0">Bondan</h5>
-                            <span>Admin Burger Bangor</span>
+                            <span>Teknisi Front End</span>
                             <p>"Dingin tapi tidak kejam &#129398"</p>
                         </div>
                         <div class="ratings">
@@ -197,8 +197,8 @@
                             <img src="images/dprri.jpg" class="rounded-circle" alt="User Image">
                         </div>
                         <div class="user-content">
-                            <h5 class="mb-0">Mas Fatur</h5>
-                            <span>Atmin JMK48</span>
+                            <h5 class="mb-0">Faturrahman</h5>
+                            <span>Teknisi Backend</span>
                             <p>"Yaudah Sih Wir"</p>
                         </div>
                         <div class="ratings">
