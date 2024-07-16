@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Laravel E-commerce Payment</title>
+    <title>Pembayaran</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
@@ -28,14 +28,14 @@
 </head>
 <body>
 <div class="container mt-5">
-    <h1 class="text-center">Payment Gateway - Isekai Store</h1>
+    <h1 class="text-center">Pembayaran Grosirku</h1>
     
     <div class="row justify-content-center mt-4">
         <div class="col-md-6">
             <div class="credit-card-box">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Payment Details</h3>
-                    <h4>You need to pay ${{ $value }}</h4>
+                    <h3 class="panel-title">Detail Pembayaran</h3>
+                    <h4>Total yang harus dibayar Rp.{{ $value }}</h4>
                 </div>
                 <div class="panel-body">
 
