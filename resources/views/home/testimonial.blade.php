@@ -66,7 +66,7 @@
               <img src="admincss/img/sobatkecepatan.png"
                 class="rounded-circle shadow-1-strong" width="150" height="150" />
             </div>
-            <h5 class="mb-3">Sobat Kecepatan</h5>
+            <h5 class="mb3">Sobat Kecepatan</h5>
             <h6 class="text-primary mb-3">Youtuber Gaming</h6>
             <p class="px-xl-3">
             Yo, this wholesale website is bussin' fr fr. They got everything you need and more, and the prices are so low it's like they're stealing money. 
@@ -125,3 +125,129 @@
   </script>
 </body>
 </html>
+
+<!-- Include Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!-- Custom CSS -->
+<style>
+.section {
+  padding: 50px 0;
+  background-color: black;
+}
+
+.slider_container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.detail-box h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.detail-box p {
+  color: white;
+  margin: 20px 0;
+}
+
+.animated-link {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.animated-link:hover {
+  background-color: black;
+  color: black;
+}
+
+.img-box {
+  text-align: center;
+}
+
+.img-box img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px black;
+  transition: transform 0.3s;
+}
+
+.img-box img:hover {
+  transform: scale(1.05);
+}
+
+/* Media Queries */
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  .detail-box h1 {
+    font-size: 1.5rem;
+  }
+
+  .detail-box p {
+    font-size: 14px;
+  }
+
+  .img-box img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .detail-box h1 {
+    font-size: 2rem;
+  }
+
+  .detail-box p {
+    font-size: 16px;
+  }
+
+  .img-box img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .detail-box h1 {
+    font-size: 2.5rem;
+  }
+
+  .detail-box p {
+    font-size: 17px;
+  }
+
+  .img-box img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1044px) {
+  .detail-box h1 {
+    font-size: 2.8rem;
+  }
+
+  .detail-box p {
+    font-size: 18px;
+  }
+
+  .img-box img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1044px) {
+  .detail-box h1 {
+    font-size: 3rem;
+  }
+
+  .detail-box p {
+    font-size: 18px;
+  }
+
+  .img-box img {
+    width: 80%;
+    height: auto;
+  }
+}
+</style>

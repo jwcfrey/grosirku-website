@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     @include('home.css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -128,179 +127,72 @@
     </section>
 </body>
 <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: transparent;
-        }
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+    }
 
-        .hero_area {
-            margin-bottom: 50px;
-        }
+    .hero_area {
+        margin-bottom: 50px;
+    }
 
-        .container {
-            max-width: auto;
-            margin: auto;
-            padding: 0 20px;
-        }
+    .container {
+        max-width: auto;
+        margin: auto;
+        padding: 0 20px;
+    }
 
-        .heading_container {
-            margin-bottom: 30px;
-            text-align: center;
-        }
+    .heading_container {
+        margin-bottom: 30px;
+        text-align: center;
+    }
 
-        .heading_center h2 {
-            font-size: 2.5em;
-            font-weight: bold;
-            margin: 0;
-            color: tomato;
-        }
+    .heading_center h2 {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin: 0;
+        color: tomato;
+    }
 
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
-        .col-md-6 {
-            width: 48%;
-            margin-bottom: 20px;
-            transition: transform 0.3s;
-        }
+    .col-md-6 {
+        width: 48%;
+        margin-bottom: 20px;
+        transition: transform 0.3s;
+    }
 
-        .col-md-6:hover {
-            transform: translateY(-10px);
-        }
+    .col-md-6:hover {
+        transform: translateY(-10px);
+    }
 
-        .card {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: box-shadow 0.3s;
-            position: relative;
-            overflow: hidden;
-            animation: fadeIn 0.5s;
-        }
+    .card {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: box-shadow 0.3s;
+        position: relative;
+        overflow: hidden;
+        animation: fadeIn 0.5s;
+    }
 
-        .card:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
+    .card:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
 
-        .user-image img {
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
+    .user-image img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
 
-        .user-content h5 {
-            margin: 10px 0 5px;
-            font-size: 1.25em;
-            color: #333;
-        }
-
-        .user-content span {
-            display: block;
-            margin-bottom: 15px;
-            color: tomato;
-        }
-
-        .user-content p {
-            font-size: 1.1em;
-            color: #555;
-        }
-
-        .ratings {
-            margin-top: 10px;
-        }
-
-        .ratings i {
-            color: #ff9800;
-        }
-
-        @media screen and (max-width: 1200px) {
-            .navbar-nav .nav-link {
-                padding: 8px 10px;
-            }
-        }
-
-        @media screen and (min-width: 993px) and (max-width: 1119px) {
-            .navbar-nav .nav-item {
-                margin-right: 5px;
-            }
-
-            .navbar-brand span {
-                font-size: 20px;
-            }
-
-            .animated-link {
-                font-size: 12px;
-                padding: 8px 10px;
-            }
-        }
-
-        @media screen and (min-width: 768px) and (max-width: 992px) {
-            .navbar-nav {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .navbar-nav .nav-item {
-                margin: 5px 0;
-            }
-
-            .animated-link {
-                padding: 8px;
-                font-size: 14px;
-            }
-        }
-
-        @media screen and (min-width: 576px) and (max-width: 767px) {
-            .navbar-nav {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .navbar-brand span {
-                font-size: 18px;
-            }
-
-            .animated-link {
-                padding: 6px;
-                font-size: 12px;
-            }
-        }
-
-        @media screen and (min-width: 400px) and (max-width: 575px) {
-            .navbar-brand span {
-                font-size: 16px;
-            }
-
-            .animated-link {
-                padding: 4px;
-                font-size: 10px;
-            }
-        }
-
-            /* Add animations */
-            .card::before {
-                content: '';
-                position: absolute;
-                top: -50%;
-                left: -50%;
-                width: 200%;
-                height: 200%;
-                background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-                transform: rotate(300deg);
-                transition: transform 1s;
-            }
-
-            .card:hover::before {
-                transform: rotate(0deg);
-            }
-    </style>
-
-</html>
+    .user-content h5

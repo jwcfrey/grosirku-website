@@ -77,6 +77,147 @@
         .hero_area {
             padding-bottom: 30px;
         }
+
+        /* Media queries for different screen sizes */
+        @media screen and (min-width: 375px) and (max-width: 425px) {
+            .heading_container h2 {
+                font-size: 1.8rem;
+            }
+
+            .box {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+
+            .div_center {
+                padding: 20px;
+            }
+
+            .img-box img {
+                width: 100%;
+            }
+
+            .detail-box h6 {
+                font-size: 1rem;
+            }
+
+            .btn-primary {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media screen and (min-width: 426px) and (max-width: 768px) {
+            .heading_container h2 {
+                font-size: 2rem;
+            }
+
+            .box {
+                padding: 20px;
+                margin-bottom: 25px;
+            }
+
+            .div_center {
+                padding: 25px;
+            }
+
+            .img-box img {
+                width: 80%;
+            }
+
+            .detail-box h6 {
+                font-size: 1.1rem;
+            }
+
+            .btn-primary {
+                padding: 12px;
+                font-size: 1rem;
+            }
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            .heading_container h2 {
+                font-size: 2.2rem;
+            }
+
+            .box {
+                padding: 25px;
+                margin-bottom: 28px;
+            }
+
+            .div_center {
+                padding: 28px;
+            }
+
+            .img-box img {
+                width: 70%;
+            }
+
+            .detail-box h6 {
+                font-size: 1.15rem;
+            }
+
+            .btn-primary {
+                padding: 14px;
+                font-size: 1.05rem;
+            }
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1044px) {
+            .heading_container h2 {
+                font-size: 2.4rem;
+            }
+
+            .box {
+                padding: 28px;
+                margin-bottom: 30px;
+            }
+
+            .div_center {
+                padding: 30px;
+            }
+
+            .img-box img {
+                width: 60%;
+            }
+
+            .detail-box h6 {
+                font-size: 1.18rem;
+            }
+
+            .btn-primary {
+                padding: 16px;
+                font-size: 1.1rem;
+            }
+        }
+
+        @media screen and (min-width: 1045px) {
+            .heading_container h2 {
+                font-size: 2.5rem;
+            }
+
+            .box {
+                padding: 30px;
+                margin-bottom: 30px;
+            }
+
+            .div_center {
+                padding: 30px;
+            }
+
+            .img-box img {
+                width: 50%;
+            }
+
+            .detail-box h6 {
+                font-size: 1.2rem;
+            }
+
+            .btn-primary {
+                padding: 18px;
+                font-size: 1.2rem;
+            }
+        }
     </style>
 </head>
 

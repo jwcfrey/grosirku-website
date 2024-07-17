@@ -119,22 +119,53 @@
     height: 100%;
   }
 
-  @media screen and (max-width: 1200px) {
+  /* Media Queries */
+  @media screen and (min-width: 375px) and (max-width: 425px) {
     .contact_section .heading_container h2 {
-      font-size: 1.75rem;
+      font-size: 0.875rem;
     }
 
     .contact_section form {
-      padding: 35px 20px;
+      padding: 10px 5px;
     }
 
     .iframe {
-      width: 600px;
-      height: 385px;
+      width: 315px;
+      height: 370px;
     }
   }
 
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .contact_section .heading_container h2 {
+      font-size: 1rem;
+    }
+
+    .contact_section form {
+      padding: 15px 10px;
+    }
+
+    .iframe {
+      width: 515px;
+      height: 470px;
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .contact_section .heading_container h2 {
+      font-size: 1.25rem;
+    }
+
+    .iframe {
+      width: 350px;
+      height: 363px;
+    }
+
+    .contact_section form {
+      padding: 20px 10px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1044px) {
     .contact_section .heading_container h2 {
       font-size: 1.5rem;
     }
@@ -149,48 +180,18 @@
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 991px) {
+  @media screen and (min-width: 1045px) {
     .contact_section .heading_container h2 {
-      font-size: 1.25rem;
-    }
-
-    .iframe {
-      width:350px;
-      height:363px;
+      font-size: 1.75rem;
     }
 
     .contact_section form {
-      padding: 20px 10px;
-    }
-  }
-
-  @media screen and (min-width: 576px) and (max-width: 767px){
-    .contact_section .heading_container h2 {
-      font-size: 1rem;
-    }
-
-    .contact_section form {
-      padding: 15px 10px;
+      padding: 35px 20px;
     }
 
     .iframe {
-      width:515px;
-      height:470px;
-    }
-  }
-
-  @media screen and (min-width: 400px) and (max-width: 575px) {
-    .contact_section .heading_container h2 {
-      font-size: 0.875rem;
-    }
-
-    .contact_section form {
-      padding: 10px 5px;
-    }
-
-    .iframe {
-      width: 315px;
-      height: 370px;
+      width: 600px;
+      height: 385px;
     }
   }
 </style>

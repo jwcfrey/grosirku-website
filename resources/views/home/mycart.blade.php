@@ -156,72 +156,27 @@
         }
 
         /* Media queries for different screen sizes */
-        @media screen (max-width: 1200px) {
-            .hero_area {
-                padding: 15px;
-            }
-
-            .div_deg {
-                margin: 30px;
-            }
-
+        @media screen and (min-width: 375px) and (max-width: 425px) {
             table {
-                width: 700px;
-            }
-
-            .formulir {
-                margin-left: -120px;
-            }
-        }
-
-        @media screen and (min-width: 993px) and (max-width: 1119px) {
-            .hero_area {
-                padding: 10px;
-            }
-
-            .div_deg {
-                margin: 20px;
-            }
-
-            table {
-                width: 600px;
+                width: 300px;
             }
 
             th,
             td {
-                font-size: 18px;
+                font-size: 12px;
             }
 
-            .formulir {
-                margin-left: -128px;
-            }
-        }
-
-        @media screen and (min-width: 768px) and (max-width: 992px) {
-            .hero_area {
-                padding: 5px;
+            input[type="text"],
+            textarea {
+                width: 200px;
             }
 
-            .div_deg {
-                margin: 10px;
-            }
-
-            table {
-                width: 500px;
-            }
-
-            th,
-            td {
-                font-size: 16px;
-            }
-
-            .formulir {
-                margin-left: -120px;
-
+            .btn {
+                padding: 3px 7px;
             }
         }
 
-        @media screen and (min-width: 576px) and (max-width: 767px) {
+        @media screen and (min-width: 426px) and (max-width: 768px) {
             .tomboll {
                 display: flex;
                 flex-wrap: wrap;
@@ -253,23 +208,67 @@
             }
         }
 
-        @media screen and (min-width: 400px) and (max-width: 575px) {
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            .hero_area {
+                padding: 5px;
+            }
+
+            .div_deg {
+                margin: 10px;
+            }
+
             table {
-                width: 300px;
+                width: 500px;
             }
 
             th,
             td {
-                font-size: 12px;
+                font-size: 16px;
             }
 
-            input[type="text"],
-            textarea {
-                width: 200px;
+            .formulir {
+                margin-left: -120px;
+            }
+        }
+
+        @media screen and (min-width: 1025px) and (max-width: 1044px) {
+            .hero_area {
+                padding: 10px;
             }
 
-            .btn {
-                padding: 3px 7px;
+            .div_deg {
+                margin: 20px;
+            }
+
+            table {
+                width: 600px;
+            }
+
+            th,
+            td {
+                font-size: 18px;
+            }
+
+            .formulir {
+                margin-left: -128px;
+            }
+        }
+
+        @media screen and (min-width: 1045px) {
+            .hero_area {
+                padding: 15px;
+            }
+
+            .div_deg {
+                margin: 30px;
+            }
+
+            table {
+                width: 700px;
+            }
+
+            .formulir {
+                margin-left: -120px;
             }
         }
     </style>

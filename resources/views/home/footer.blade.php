@@ -31,33 +31,34 @@
     color: #fff;
   }
 
-  @media screen and (max-width: 1200px) {
+  /* Media Queries */
+  @media screen and (min-width: 375px) and (max-width: 425px) {
     .footer-quote {
-      font-size: 1rem;
+      font-size: 0.6rem;
     }
   }
 
-  @media screen and (min-width: 993px) and (max-width: 1119px) {
-    .footer-quote {
-      font-size: 0.9rem;
-    }
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 992px) {
-    .footer-quote {
-      font-size: 0.8rem;
-    }
-  }
-
-  @media screen and (min-width: 576px) and (max-width: 767px) {
+  @media screen and (min-width: 426px) and (max-width: 768px) {
     .footer-quote {
       font-size: 0.7rem;
     }
   }
 
-  @media screen and (min-width: 400px) and (max-width: 575px) {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
     .footer-quote {
-      font-size: 0.6rem;
+      font-size: 0.8rem;
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1044px) {
+    .footer-quote {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media screen and (min-width: 1045px) {
+    .footer-quote {
+      font-size: 1rem;
     }
   }
 </style>

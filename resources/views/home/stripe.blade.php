@@ -24,6 +24,67 @@
         .btn-custom:hover {
             background-color: #45a049;
         }
+
+        /* Media queries for different screen sizes */
+        @media screen and (min-width: 375px) and (max-width: 425px) {
+            .credit-card-box {
+                padding: 10px;
+            }
+            .panel-title {
+                font-size: 1rem;
+            }
+            .btn-custom {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media screen and (min-width: 426px) and (max-width: 768px) {
+            .credit-card-box {
+                padding: 15px;
+            }
+            .panel-title {
+                font-size: 1.1rem;
+            }
+            .btn-custom {
+                font-size: 1rem;
+            }
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            .credit-card-box {
+                padding: 20px;
+            }
+            .panel-title {
+                font-size: 1.2rem;
+            }
+            .btn-custom {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1044px) {
+            .credit-card-box {
+                padding: 25px;
+            }
+            .panel-title {
+                font-size: 1.3rem;
+            }
+            .btn-custom {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media screen and (min-width: 1045px) {
+            .credit-card-box {
+                padding: 30px;
+            }
+            .panel-title {
+                font-size: 1.4rem;
+            }
+            .btn-custom {
+                font-size: 1.3rem;
+            }
+        }
     </style>
 </head>
 <body>

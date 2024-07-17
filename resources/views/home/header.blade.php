@@ -251,7 +251,7 @@
       font-size: 12px;
     }
 
-    .tombol{
+        .tombol{
       display:flex;
       margin-top: -30px;
     }

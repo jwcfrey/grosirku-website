@@ -40,7 +40,7 @@
             <img src="products/{{$products->image}}" alt="">
           </div>
           <div class="detail-box">
-          <h6>{{ Str::limit($products->title, 25, '...') }}</h6>
+          <h6>{{ Str::limit($products->title, 20, '...') }}</h6>
             <h6>Harga
               <span style="color:black;"><p>Rp{{$products->price}}</p></span>
             </h6>
@@ -150,34 +150,17 @@
   }
 
   /* Media Queries */
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 375px) and (max-width: 425px) {
     .heading_container h2 {
-      font-size: 2rem;
-    }
-  }
-
-  @media screen and (min-width: 993px) and (max-width: 1119px) {
-    .heading_container h2 {
-      font-size: 1.8rem;
+      font-size: 1.2rem;
     }
     .btn {
-      font-size: 0.9rem;
-      padding: 8px 16px;
-    }
-    
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 992px) {
-    .heading_container h2 {
-      font-size: 1.6rem;
-    }
-    .btn {
-      font-size: 0.8rem;
-      padding: 6px 12px;
+      font-size: 0.6rem;
+      padding: 2px 4px;
     }
   }
 
-  @media screen and (min-width: 576px) and (max-width: 767px) {
+  @media screen and (min-width: 426px) and (max-width: 768px) {
     .heading_container h2 {
       font-size: 1.4rem;
     }
@@ -187,13 +170,34 @@
     }
   }
 
-  @media screen and (min-width: 400px) and (max-width: 575px) {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
     .heading_container h2 {
-      font-size: 1.2rem;
+      font-size: 1.6rem;
     }
     .btn {
-      font-size: 0.6rem;
-      padding: 2px 4px;
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1044px) {
+    .heading_container h2 {
+      font-size: 1.8rem;
+    }
+    .btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+
+  @media screen and (min-width: 1044px) {
+    .heading_container h2 {
+      font-size: 2rem;
+    }
+    .btn {
+      font-size: 1rem;
+      padding: 10px 20px;
     }
   }
 </style>
+
