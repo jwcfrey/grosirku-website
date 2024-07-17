@@ -3,129 +3,41 @@
 
 <head>
     @include('home.css')
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="admincss/img/logogrosirku.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-        .hero_area {
-            margin-bottom: 50px;
-        }
+    <title>Grosirku</title>
 
-        .container {
-            max-width: auto;
-            margin: auto;
-            padding: 0 20px;
-        }
+    <!-- Owl Carousel stylesheet -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-        .heading_container {
-            margin-bottom: 30px;
-            text-align: center;
-        }
+    <!-- Bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-        .heading_center h2 {
-            font-size: 2.5em;
-            font-weight: bold;
-            margin: 0;
-            color: tomato;
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .col-md-6 {
-            width: 48%;
-            margin-bottom: 20px;
-            transition: transform 0.3s;
-        }
-
-        .col-md-6:hover {
-            transform: translateY(-10px);
-        }
-
-        .card {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: box-shadow 0.3s;
-            position: relative;
-            overflow: hidden;
-            animation: fadeIn 0.5s;
-        }
-
-        .card:hover {
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-        }
-
-        .user-image img {
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-
-        .user-content h5 {
-            margin: 10px 0 5px;
-            font-size: 1.25em;
-            color: #333;
-        }
-
-        .user-content span {
-            display: block;
-            margin-bottom: 15px;
-            color: tomato;
-        }
-
-        .user-content p {
-            font-size: 1.1em;
-            color: #555;
-        }
-
-        .ratings {
-            margin-top: 10px;
-        }
-
-        .ratings i {
-            color: #ff9800;
-        }
-
-        @media (max-width: 768px) {
-            .col-md-6 {
-                width: 100%;
-            }
-        }
-
-        /* Add animations */
-        .card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1), rgba(255,255,255,0));
-            transform: rotate(300deg);
-            transition: transform 1s;
-        }
-
-        .card:hover::before {
-            transform: rotate(0deg);
-        }
-    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- Responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- AOS (Animate On Scroll) library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
 
 <body>
     <div class="hero_area">
         @include('home.header')
+        <section class="client_section py-5">
         <div class="container mt-5 mb-5">
             <div class="heading_container heading_center">
                 <h2>Website Ini Dibuat Oleh</h2>
@@ -213,6 +125,182 @@
             </div>
         </div>
     </div>
+    </section>
 </body>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+        }
+
+        .hero_area {
+            margin-bottom: 50px;
+        }
+
+        .container {
+            max-width: auto;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        .heading_container {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .heading_center h2 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 0;
+            color: tomato;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .col-md-6 {
+            width: 48%;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .col-md-6:hover {
+            transform: translateY(-10px);
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 0.5s;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .user-image img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .user-content h5 {
+            margin: 10px 0 5px;
+            font-size: 1.25em;
+            color: #333;
+        }
+
+        .user-content span {
+            display: block;
+            margin-bottom: 15px;
+            color: tomato;
+        }
+
+        .user-content p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .ratings {
+            margin-top: 10px;
+        }
+
+        .ratings i {
+            color: #ff9800;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .navbar-nav .nav-link {
+                padding: 8px 10px;
+            }
+        }
+
+        @media screen and (min-width: 993px) and (max-width: 1119px) {
+            .navbar-nav .nav-item {
+                margin-right: 5px;
+            }
+
+            .navbar-brand span {
+                font-size: 20px;
+            }
+
+            .animated-link {
+                font-size: 12px;
+                padding: 8px 10px;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            .navbar-nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .navbar-nav .nav-item {
+                margin: 5px 0;
+            }
+
+            .animated-link {
+                padding: 8px;
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (min-width: 576px) and (max-width: 767px) {
+            .navbar-nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .navbar-brand span {
+                font-size: 18px;
+            }
+
+            .animated-link {
+                padding: 6px;
+                font-size: 12px;
+            }
+        }
+
+        @media screen and (min-width: 400px) and (max-width: 575px) {
+            .navbar-brand span {
+                font-size: 16px;
+            }
+
+            .animated-link {
+                padding: 4px;
+                font-size: 10px;
+            }
+        }
+
+            /* Add animations */
+            .card::before {
+                content: '';
+                position: absolute;
+                top: -50%;
+                left: -50%;
+                width: 200%;
+                height: 200%;
+                background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+                transform: rotate(300deg);
+                transition: transform 1s;
+            }
+
+            .card:hover::before {
+                transform: rotate(0deg);
+            }
+    </style>
 
 </html>

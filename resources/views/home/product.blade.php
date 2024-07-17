@@ -1,4 +1,33 @@
 <section class="shop_section layout_padding">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<link rel="shortcut icon" href="admincss/img/logogrosirku.png" type="image/x-icon">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<title>Grosirku</title>
+
+<!-- Owl Carousel stylesheet -->
+<link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+<!-- Bootstrap core css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet" />
+<!-- Responsive style -->
+<link href="css/responsive.css" rel="stylesheet" />
+<!-- Animate.css for animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<!-- AOS (Animate On Scroll) library -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
   <div class="container">
     <div class="heading_container heading_center animate__animated animate__fadeInDown">
       <h2>Produk Terbaru</h2>
@@ -11,7 +40,7 @@
             <img src="products/{{$products->image}}" alt="">
           </div>
           <div class="detail-box">
-            <h6 style="justify-content:left; display:flex; text-align:left; margin-left: 5px;">{{$products->title}}</h6>
+          <h6>{{ Str::limit($products->title, 25, '...') }}</h6>
             <h6>Harga
               <span style="color:black;"><p>Rp{{$products->price}}</p></span>
             </h6>
@@ -33,7 +62,7 @@
 <style>
   .shop_section {
     padding: 60px 0;
-    background-color: #fff;
+    background-color: transparent;
   }
 
   .heading_container h2 {
@@ -43,6 +72,9 @@
   }
 
   .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: #f9f9f9;
     padding: 20px;
     margin-bottom: 30px;
@@ -103,7 +135,7 @@
 
   .btn-danger:hover {
     background-color: white;
-    color: #fff;
+    color: tomato;
   }
 
   .btn-primary {
@@ -115,5 +147,53 @@
   .btn-primary:hover {
     background-color: tomato;
     color: #fff;
+  }
+
+  /* Media Queries */
+  @media screen and (max-width: 1200px) {
+    .heading_container h2 {
+      font-size: 2rem;
+    }
+  }
+
+  @media screen and (min-width: 993px) and (max-width: 1119px) {
+    .heading_container h2 {
+      font-size: 1.8rem;
+    }
+    .btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+    
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .heading_container h2 {
+      font-size: 1.6rem;
+    }
+    .btn {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .heading_container h2 {
+      font-size: 1.4rem;
+    }
+    .btn {
+      font-size: 0.7rem;
+      padding: 4px 8px;
+    }
+  }
+
+  @media screen and (min-width: 400px) and (max-width: 575px) {
+    .heading_container h2 {
+      font-size: 1.2rem;
+    }
+    .btn {
+      font-size: 0.6rem;
+      padding: 2px 4px;
+    }
   }
 </style>

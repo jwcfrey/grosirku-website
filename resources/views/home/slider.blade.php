@@ -37,47 +37,122 @@
 
 <!-- Custom CSS -->
 <style>
-  .slider_section {
-    background-color: black;
-    padding: 50px 0;
+.section {
+  padding: 50px 0;
+  background-color: black;
+}
+
+.slider_container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.detail-box h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.detail-box p {
+  color: white;
+  margin: 20px 0;
+}
+
+.animated-link {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.animated-link:hover {
+  background-color: black;
+  color: black;
+}
+
+.img-box {
+  text-align: center;
+}
+
+.img-box img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px black;
+  transition: transform 0.3s;
+}
+
+.img-box img:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 400px) and (max-width: 575px) {
+  .detail-box h1 {
+    font-size: 1.5rem;
   }
-  
-  .slider_container {
-    max-width: 1200px;
-    margin: auto;
+
+  .detail-box p {
+    font-size: 14px;
   }
-  
+
+  .img-box img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .detail-box h1 {
+    font-size: 2rem;
+  }
+
+  .detail-box p {
+    font-size: 16px;
+  }
+
+  .img-box img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .detail-box h1 {
+    font-size: 2.5rem;
+  }
+
+  .detail-box p {
+    font-size: 17px;
+  }
+
+  .img-box img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1119px) {
+  .detail-box h1 {
+    font-size: 2.8rem;
+  }
+
+  .detail-box p {
+    font-size: 18px;
+  }
+
+  .img-box img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
   .detail-box h1 {
     font-size: 3rem;
-    font-weight: bold;
-    color: white;
   }
-  
+
   .detail-box p {
-    color: white;
-    margin: 20px 0;
+    font-size: 18px;
   }
-  
-  .animated-link {
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .animated-link:hover {
-    background-color: black;
-    color: black;
-  }
-  
-  .img-box {
-    text-align: center;
-  }
-  
+
   .img-box img {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px black;
-    transition: transform 0.3s;
+    width: 80%;
+    height: auto;
   }
-  
-  .img-box img:hover {
-    transform: scale(1.05);
-  }
+}
 </style>

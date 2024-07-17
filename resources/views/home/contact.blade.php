@@ -1,3 +1,4 @@
+<!-- Contact Section -->
 <section id="contact" class="contact_section">
   <div class="container px-0">
     <div class="heading_container">
@@ -11,7 +12,7 @@
       <div class="col-lg-7 col-md-6 px-0">
         <div class="map_container">
           <div class="map-responsive">
-            <iframe
+            <iframe class="iframe"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.101078053493!2d107.4537911762506!3d-6.508888363636539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e690e5b4d76c349%3A0x8c171e80ac57eb8e!2sSekolah%20Tinggi%20Teknologi%20Wastukancana%20Purwakarta!5e0!3m2!1sid!2sid!4v1719985071785!5m2!1sid!2sid"
               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -48,9 +49,10 @@
 
 <!-- CSS -->
 <style>
-  .container{
+  .container {
     transition: background-color 0.3s, color 0.3s;
   }
+
   .contact_section {
     position: relative;
   }
@@ -68,7 +70,6 @@
   }
 
   .contact_section form {
-    padding-right: 35px;
     padding: 45px 20px;
   }
 
@@ -81,18 +82,6 @@
     background-color: transparent;
     outline: none;
     color: #101010;
-  }
-
-  .contact_section input::-webkit-input-placeholder {
-    color: #131313;
-  }
-
-  .contact_section input:-ms-input-placeholder {
-    color: #131313;
-  }
-
-  .contact_section input::-ms-input-placeholder {
-    color: #131313;
   }
 
   .contact_section input::placeholder {
@@ -128,6 +117,81 @@
 
   .contact_section .map_container .map-responsive {
     height: 100%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .contact_section .heading_container h2 {
+      font-size: 1.75rem;
+    }
+
+    .contact_section form {
+      padding: 35px 20px;
+    }
+
+    .iframe {
+      width: 600px;
+      height: 385px;
+    }
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .contact_section .heading_container h2 {
+      font-size: 1.5rem;
+    }
+
+    .contact_section form {
+      padding: 25px 15px;
+    }
+
+    .iframe {
+      width: 500px;
+      height: 500px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .contact_section .heading_container h2 {
+      font-size: 1.25rem;
+    }
+
+    .iframe {
+      width:350px;
+      height:363px;
+    }
+
+    .contact_section form {
+      padding: 20px 10px;
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px){
+    .contact_section .heading_container h2 {
+      font-size: 1rem;
+    }
+
+    .contact_section form {
+      padding: 15px 10px;
+    }
+
+    .iframe {
+      width:515px;
+      height:470px;
+    }
+  }
+
+  @media screen and (min-width: 400px) and (max-width: 575px) {
+    .contact_section .heading_container h2 {
+      font-size: 0.875rem;
+    }
+
+    .contact_section form {
+      padding: 10px 5px;
+    }
+
+    .iframe {
+      width: 315px;
+      height: 370px;
+    }
   }
 </style>
 
