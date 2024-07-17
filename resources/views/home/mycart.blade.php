@@ -52,7 +52,7 @@
         table {
             border-collapse: collapse;
             width: 800px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 8px;
             background-color: white;
         }
 
@@ -289,7 +289,7 @@
                 <?php $value = 0; ?>
                 @foreach ($cart as $item)
                     <tr>
-                        <td>{{ $item->product->title }}</td>
+                        <td style="color: black;">{{ $item->product->title }}</td>
                         <td>{{ number_format((float) $item->product->price, 0, ',', '.') }}</td>
                         <td>
                             <img width="150" src="/products/{{ $item->product->image }}" alt="{{ $item->product->title }}">
