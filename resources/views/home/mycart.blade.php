@@ -290,11 +290,11 @@
                 @foreach ($cart as $item)
                     <tr>
                         <td style="color: black;">{{ $item->product->title }}</td>
-                        <td>{{ number_format((float) $item->product->price, 0, ',', '.') }}</td>
-                        <td>
+                        <td style="color: black;">{{ number_format((float) $item->product->price, 0, ',', '.') }}</td>
+                        <td style="color: black;">
                             <img width="150" src="/products/{{ $item->product->image }}" alt="{{ $item->product->title }}">
                         </td>
-                        <td>
+                        <td style="color: black;">
                             <form action="{{ url('delete_cart', $item->id) }}" method="POST"
                                 onsubmit="return confirm('Are you sure you want to delete this item?');">
                                 @csrf
